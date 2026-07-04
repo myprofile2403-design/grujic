@@ -32,7 +32,7 @@ export default function App() {
             aria-label="Home"
           >
             {/* Added logo per user request */}
-            <img src="/logo.png" alt="Logo" className="h-[60px] object-contain" />
+            <img src="logo.png" alt="Logo" className="h-[60px] object-contain" />
           </a>
 
           {/* Navigation Links */}
@@ -79,7 +79,7 @@ export default function App() {
       <footer className="bg-[#242121] text-white pt-16 pb-12 w-full">
         <div className="max-w-[1280px] mx-auto px-6 md:px-10 flex flex-col md:flex-row justify-between gap-12">
           <div className="md:w-1/3 flex flex-col items-center text-center">
-            <img src="/logo.png" alt="Logo" className="h-[76px] w-auto object-contain mb-8" />
+            <img src="logo.png" alt="Logo" className="h-[76px] w-auto object-contain mb-8" />
             
             <p className="text-xl text-[#BC9706] mb-2 font-medium">Stavební firma</p>
             <h2 className="text-3xl font-bold text-[#BC9706] mb-3">GRUJIČ CONSTRUCTION s.r.o.</h2>
@@ -138,14 +138,14 @@ function HomePage() {
     <>
       <section className="relative w-full min-h-[700px] overflow-hidden pt-[140px] pb-[100px] flex justify-start items-start">
         <img
-          src="/images/bg_hero.png"
+          src="images/bg_hero.png"
           alt="Luxury villa with pool"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-10 flex flex-col items-start">
           <div className="bg-white/20 backdrop-blur-sm p-8 md:p-12 inline-flex flex-col items-start rounded-xl border border-white/20 shadow-2xl max-w-[650px]">
-            <img src="/logo.png" alt="Logo" className="h-[70px] object-contain mb-6" />
+            <img src="logo.png" alt="Logo" className="h-[70px] object-contain mb-6" />
             <h1 className="text-white text-5xl md:text-7xl font-bold leading-tight mb-4 tracking-tight drop-shadow-md">
               Kvalitní stavební řešení
             </h1>
@@ -168,7 +168,7 @@ function HomePage() {
           </div>
           <div className="md:w-[45%]">
             <img
-              src="/images/workers.png"
+              src="images/workers.png"
               alt="Construction workers"
               className="w-full h-auto shadow-2xl rounded-lg object-cover aspect-[4/3] hover:scale-[1.02] transition-transform duration-500"
             />
@@ -183,14 +183,14 @@ function HomePage() {
             <p className="text-[#242121] text-2xl font-medium opacity-80">Naše stavební služby</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard title="Zateplení a fasády" img="/images/facade.png" desc="Provádíme zateplení fasád rodinných, bytových i panelových domů." />
-            <ServiceCard title="Hydroizolační Fólie" img="/images/foil.png" desc="Spolehlivá ochrana proti vodě a vlhkosti pro ploché střechy." />
-            <ServiceCard title="Výstavba domů" img="/images/house.png" desc="Váš vysněný dům postavený k dokonalosti, od základu po střechu." />
-            <ServiceCard title="Sádrokartony" img="/images/drywall.png" desc="Desky mají využití téměř u všech druhů staveb, kde je kladen důraz na kvalitu." />
-            <ServiceCard title="Obklady a dlažby" img="/images/tiles.png" desc="Zaměřujeme se na pokládku obkladů a dlažeb z různých materiálů." />
-            <ServiceCard title="Malby a nátěry" img="/images/painting.png" desc="Specializujeme se na malířské a lakýrnické práce, včetně nátěrů fasád a střech." />
-            <ServiceCard title="Rekonstrukce" img="/images/reconstruction.png" desc="Specializujeme se na kompletní rekonstrukce bytů, rodinných domů a firem." />
-            <ServiceCard title="Vodoinstalatérské a topenářské práce" img="/images/plumbing.png" desc="Zajišťujeme kompletní vodoinstalatérské a topenářské práce." />
+            <ServiceCard title="Zateplení a fasády" img="images/facade.png" desc="Provádíme zateplení fasád rodinných, bytových i panelových domů." />
+            <ServiceCard title="Hydroizolační Fólie" img="images/foil.png" desc="Spolehlivá ochrana proti vodě a vlhkosti pro ploché střechy." />
+            <ServiceCard title="Výstavba domů" img="images/house.png" desc="Váš vysněný dům postavený k dokonalosti, od základu po střechu." />
+            <ServiceCard title="Sádrokartony" img="images/drywall.png" desc="Desky mají využití téměř u všech druhů staveb, kde je kladen důraz na kvalitu." />
+            <ServiceCard title="Obklady a dlažby" img="images/tiles.png" desc="Zaměřujeme se na pokládku obkladů a dlažeb z různých materiálů." />
+            <ServiceCard title="Malby a nátěry" img="images/painting.png" desc="Specializujeme se na malířské a lakýrnické práce, včetně nátěrů fasád a střech." />
+            <ServiceCard title="Rekonstrukce" img="images/reconstruction.png" desc="Specializujeme se na kompletní rekonstrukce bytů, rodinných domů a firem." />
+            <ServiceCard title="Vodoinstalatérské a topenářské práce" img="images/plumbing.png" desc="Zajišťujeme kompletní vodoinstalatérské a topenářské práce." />
           </div>
         </div>
       </section>
@@ -202,10 +202,10 @@ function HomePage() {
             <p className="text-[#242121] text-2xl font-medium opacity-80">Naše práce</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ProjectCard img="/images/project1.png" />
-            <ProjectCard img="/images/project2.png" />
-            <ProjectCard img="/images/project3.png" />
-            <ProjectCard img="/images/project4.png" />
+            <ProjectCard img="images/project1.png" />
+            <ProjectCard img="images/project2.png" />
+            <ProjectCard img="images/project3.png" />
+            <ProjectCard img="images/project4.png" />
           </div>
         </div>
       </section>
@@ -255,14 +255,14 @@ function ServicesPage() {
       <h1 className="text-5xl font-bold text-[#A97C50] mb-8">Služby</h1>
       <p className="text-xl mb-12 text-gray-600">Nabízíme široké spektrum stavebních prací.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <ServiceCard title="Zateplení a fasády" img="/images/facade.png" desc="Provádíme zateplení fasád rodinných, bytových i panelových domů." />
-        <ServiceCard title="Hydroizolační Fólie" img="/images/foil.png" desc="Spolehlivá ochrana proti vodě a vlhkosti pro ploché střechy." />
-        <ServiceCard title="Výstavba domů" img="/images/house.png" desc="Váš vysněný dům postavený k dokonalosti, od základu po střechu." />
-        <ServiceCard title="Sádrokartony" img="/images/drywall.png" desc="Desky mají využití téměř u všech druhů staveb, kde je kladen důraz na kvalitu." />
-        <ServiceCard title="Obklady a dlažby" img="/images/tiles.png" desc="Zaměřujeme se na pokládku obkladů a dlažeb z různých materiálů." />
-        <ServiceCard title="Malby a nátěry" img="/images/painting.png" desc="Specializujeme se na malířské a lakýrnické práce, včetně nátěrů fasád a střech." />
-        <ServiceCard title="Rekonstrukce" img="/images/reconstruction.png" desc="Specializujeme se na kompletní rekonstrukce bytů, rodinných domů a firem." />
-        <ServiceCard title="Vodoinstalatérské a topenářské práce" img="/images/plumbing.png" desc="Zajišťujeme kompletní vodoinstalatérské a topenářské práce." />
+        <ServiceCard title="Zateplení a fasády" img="images/facade.png" desc="Provádíme zateplení fasád rodinných, bytových i panelových domů." />
+        <ServiceCard title="Hydroizolační Fólie" img="images/foil.png" desc="Spolehlivá ochrana proti vodě a vlhkosti pro ploché střechy." />
+        <ServiceCard title="Výstavba domů" img="images/house.png" desc="Váš vysněný dům postavený k dokonalosti, od základu po střechu." />
+        <ServiceCard title="Sádrokartony" img="images/drywall.png" desc="Desky mají využití téměř u všech druhů staveb, kde je kladen důraz na kvalitu." />
+        <ServiceCard title="Obklady a dlažby" img="images/tiles.png" desc="Zaměřujeme se na pokládku obkladů a dlažeb z různých materiálů." />
+        <ServiceCard title="Malby a nátěry" img="images/painting.png" desc="Specializujeme se na malířské a lakýrnické práce, včetně nátěrů fasád a střech." />
+        <ServiceCard title="Rekonstrukce" img="images/reconstruction.png" desc="Specializujeme se na kompletní rekonstrukce bytů, rodinných domů a firem." />
+        <ServiceCard title="Vodoinstalatérské a topenářské práce" img="images/plumbing.png" desc="Zajišťujeme kompletní vodoinstalatérské a topenářské práce." />
       </div>
     </div>
   );
@@ -274,10 +274,10 @@ function ProjectsPage() {
       <h1 className="text-5xl font-bold text-[#A97C50] mb-8">Projekty</h1>
       <p className="text-xl mb-12 text-gray-600">Prohlédněte si naše úspěšné realizace.</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        <ProjectCard img="/images/project1.png" />
-        <ProjectCard img="/images/project2.png" />
-        <ProjectCard img="/images/project3.png" />
-        <ProjectCard img="/images/project4.png" />
+        <ProjectCard img="images/project1.png" />
+        <ProjectCard img="images/project2.png" />
+        <ProjectCard img="images/project3.png" />
+        <ProjectCard img="images/project4.png" />
       </div>
     </div>
   );
