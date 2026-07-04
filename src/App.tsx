@@ -34,7 +34,7 @@ export default function App() {
             {/* Added logo per user request */}
             <img src="/logo.png" alt="Logo" className="h-[60px] object-contain" />
           </a>
-          
+
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-6 font-semibold text-white/90">
             <button onClick={() => setCurrentPage('Home')} className="hover:text-white transition-colors">Domů</button>
@@ -53,10 +53,10 @@ export default function App() {
               Napište nám
             </a>
             <a
-              href="tel:721084563"
+              href="tel:+420608411169"
               className="bg-[#242121] text-white text-sm font-medium flex items-center px-4 h-[38px] hover:bg-[#3a3737] transition-colors tracking-wider"
             >
-              721 084 563
+              +420 608 411 169
             </a>
           </div>
 
@@ -78,30 +78,45 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-[#242121] text-white pt-16 pb-12 w-full">
         <div className="max-w-[1280px] mx-auto px-6 md:px-10 flex flex-col md:flex-row justify-between gap-12">
-          <div className="md:w-1/3 flex flex-col">
-            <img src="/logo.png" alt="Logo" className="h-[76px] w-auto object-contain mb-6 self-start" style={{ filter: "brightness(0) invert(1)" }} />
-            <p className="text-lg text-gray-300 mb-2">Stavební firma</p>
-            <p className="text-lg text-gray-300 mb-8">Vše v jednom... výstavba od A do Z</p>
+          <div className="md:w-1/3 flex flex-col items-center text-center">
+            <img src="/logo.png" alt="Logo" className="h-[76px] w-auto object-contain mb-8" />
             
-            <h3 className="text-2xl font-light tracking-wide text-white mb-4">Kontakt</h3>
-            <div className="text-gray-300 space-y-2 mb-6">
-              <a href="tel:+420721084563" className="block hover:text-white transition-colors">Telefon: +420 721 084 563</a>
-              <a href="mailto:info@stavebnifirma.cz" className="block hover:text-white transition-colors">E-mail: info@stavebnifirma.cz</a>
+            <p className="text-xl text-[#BC9706] mb-2 font-medium">Stavební firma</p>
+            <h2 className="text-3xl font-bold text-[#BC9706] mb-3">GRUJIČ CONSTRUCTION s.r.o.</h2>
+            <p className="text-xl text-[#BC9706] mb-10">Vše v jednom...výstavba od A do Z</p>
+            
+            <h3 className="text-4xl font-light text-[#BC9706] mb-8">Kontakt</h3>
+            
+            <div className="text-gray-300 space-y-2 mb-8 text-lg">
+              <a href="tel:+420608411169" className="block hover:text-white transition-colors">Telefon: +420 608 411 169</a>
+              <a href="mailto:grujic@mail.cz" className="block hover:text-white transition-colors">E-mail: grujic@mail.cz</a>
             </div>
 
-            <div className="text-gray-300 space-y-1 mb-6">
-              <p className="font-semibold text-white">GRUJIČ CONSTRUCTION s.r.o.</p>
+            <div className="text-gray-300 space-y-1 mb-8 text-lg">
               <p>Körnerova 455/7</p>
               <p>Zábrdovice (Brno-střed), 602 00 Brno</p>
             </div>
 
-            <div className="text-gray-300 space-y-1">
+            <div className="text-gray-300 space-y-1 mb-12 text-lg">
               <p>Jednatel: SAŠA GRUJIĆ</p>
               <p>IČO: 10840648</p>
               <p>DIČ: CZ10840648</p>
             </div>
+
+            {/* Social Icons */}
+            <div className="flex gap-6 items-center justify-center">
+              <a href="#" className="text-white hover:text-[#BC9706] transition-colors" aria-label="Instagram">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <a href="#" className="text-white hover:text-[#BC9706] transition-colors" aria-label="TikTok">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+              </a>
+              <a href="#" className="text-white hover:text-[#BC9706] transition-colors" aria-label="Facebook">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+              </a>
+            </div>
           </div>
-          
+
           <div className="md:w-1/2 flex flex-col bg-white text-black p-8 md:p-12 rounded shadow-lg">
             <h2 className="text-3xl font-light mb-8 tracking-wide">KONTAKTUJTE NÁS</h2>
             <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
@@ -121,15 +136,16 @@ export default function App() {
 function HomePage() {
   return (
     <>
-      <section className="relative w-full min-h-[700px] overflow-hidden flex items-center">
+      <section className="relative w-full min-h-[700px] overflow-hidden pt-[140px] pb-[100px] flex justify-start items-start">
         <img
-          src="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/7e54a0_53baa898aabb47ccab9fe6a08587c54f_mv2.png"
-          alt="Construction background"
+          src="/images/bg_hero.png"
+          alt="Luxury villa with pool"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-10 mt-[100px]">
-          <div className="bg-white/20 backdrop-blur-sm p-8 md:p-12 inline-block rounded-xl border border-white/20 shadow-2xl max-w-[650px]">
+        <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-10 flex flex-col items-start">
+          <div className="bg-white/20 backdrop-blur-sm p-8 md:p-12 inline-flex flex-col items-start rounded-xl border border-white/20 shadow-2xl max-w-[650px]">
+            <img src="/logo.png" alt="Logo" className="h-[70px] object-contain mb-6" />
             <h1 className="text-white text-5xl md:text-7xl font-bold leading-tight mb-4 tracking-tight drop-shadow-md">
               Kvalitní stavební řešení
             </h1>
@@ -152,7 +168,7 @@ function HomePage() {
           </div>
           <div className="md:w-[45%]">
             <img
-              src="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/11062b_aebf3dfd3b1745ee97d9ea32bd402499_mv2.jpg"
+              src="/images/workers.png"
               alt="Construction workers"
               className="w-full h-auto shadow-2xl rounded-lg object-cover aspect-[4/3] hover:scale-[1.02] transition-transform duration-500"
             />
@@ -166,30 +182,32 @@ function HomePage() {
             <h2 className="text-[#242121] text-5xl md:text-6xl font-bold tracking-tight mb-4">Služby</h2>
             <p className="text-[#242121] text-2xl font-medium opacity-80">Naše stavební služby</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <ServiceCard title="Zateplení a fasády" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/f8f2f3_f201ef24b3354535bf18313bf4b9ee03_mv2.jpg" desc="Provádíme zateplení fasád rodinných, bytových i panelových domů." />
-            <ServiceCard title="Napínané stropy" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/f8f2f3_c0e9021666d34156934d81bb1deb1e12_mv2.jpg" />
-            <ServiceCard title="Hydroizolační Fólie" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/7e54a0_d07d4013202c46babe7309a8847a264e_mv2.jpg" />
-            <ServiceCard title="Výstavba domů" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/7e54a0_9e7f1b48479846dab59ab443b6b7694e_mv2.jpg" desc="Váš vysněný dům postavený k dokonalosti" />
-            <ServiceCard title="Sádrokartony" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/7e54a0_1c894f2406ad48618d4b60e7df2bc77d_mv2.jpg" desc="Desky mají využití téměř u všech druhů staveb, kde je kladen důraz na kvalitu." />
-            <ServiceCard title="Obklady a dlažby" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/7e54a0_7446cf8b276840b8bed6fe4e43182a06_mv2.jpg" desc="Zaměřujeme se na pokládku obkladů a dlažeb z různých materiálů." />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ServiceCard title="Zateplení a fasády" img="/images/facade.png" desc="Provádíme zateplení fasád rodinných, bytových i panelových domů." />
+            <ServiceCard title="Hydroizolační Fólie" img="/images/foil.png" desc="Spolehlivá ochrana proti vodě a vlhkosti pro ploché střechy." />
+            <ServiceCard title="Výstavba domů" img="/images/house.png" desc="Váš vysněný dům postavený k dokonalosti, od základu po střechu." />
+            <ServiceCard title="Sádrokartony" img="/images/drywall.png" desc="Desky mají využití téměř u všech druhů staveb, kde je kladen důraz na kvalitu." />
+            <ServiceCard title="Obklady a dlažby" img="/images/tiles.png" desc="Zaměřujeme se na pokládku obkladů a dlažeb z různých materiálů." />
+            <ServiceCard title="Malby a nátěry" img="/images/painting.png" desc="Specializujeme se na malířské a lakýrnické práce, včetně nátěrů fasád a střech." />
+            <ServiceCard title="Rekonstrukce" img="/images/reconstruction.png" desc="Specializujeme se na kompletní rekonstrukce bytů, rodinných domů a firem." />
+            <ServiceCard title="Vodoinstalatérské a topenářské práce" img="/images/plumbing.png" desc="Zajišťujeme kompletní vodoinstalatérské a topenářské práce." />
           </div>
         </div>
       </section>
 
       <section className="bg-white py-24 w-full">
-         <div className="max-w-[1280px] mx-auto px-6 md:px-10">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-10">
           <div className="mb-16">
             <h2 className="text-[#242121] text-5xl md:text-6xl font-bold tracking-tight mb-4">Projekty</h2>
             <p className="text-[#242121] text-2xl font-medium opacity-80">Naše práce</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ProjectCard img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/11062b_b743373ab2514f928a46d12c704d9170_mv2.jpg" />
-            <ProjectCard img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/c837a6_7f8bb28a0d1646bfbcc18d8f11e046aa_mv2.jpg" />
-            <ProjectCard img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/11062b_f6bec34858fa456ab712aa4018880375_mv2.jpg" />
-            <ProjectCard img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/11062b_24095eb285b9463d89099b1c33fe57ea_mv2.jpg" />
+            <ProjectCard img="/images/project1.png" />
+            <ProjectCard img="/images/project2.png" />
+            <ProjectCard img="/images/project3.png" />
+            <ProjectCard img="/images/project4.png" />
           </div>
-         </div>
+        </div>
       </section>
     </>
   );
@@ -237,9 +255,14 @@ function ServicesPage() {
       <h1 className="text-5xl font-bold text-[#A97C50] mb-8">Služby</h1>
       <p className="text-xl mb-12 text-gray-600">Nabízíme široké spektrum stavebních prací.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <ServiceCard title="Zateplení a fasády" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/f8f2f3_f201ef24b3354535bf18313bf4b9ee03_mv2.jpg" />
-        <ServiceCard title="Výstavba domů" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/7e54a0_9e7f1b48479846dab59ab443b6b7694e_mv2.jpg" />
-        <ServiceCard title="Rekonstrukce" img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/7e54a0_a490b3d01e3e4717ac53d99eddf6b900_mv2.jpg" />
+        <ServiceCard title="Zateplení a fasády" img="/images/facade.png" desc="Provádíme zateplení fasád rodinných, bytových i panelových domů." />
+        <ServiceCard title="Hydroizolační Fólie" img="/images/foil.png" desc="Spolehlivá ochrana proti vodě a vlhkosti pro ploché střechy." />
+        <ServiceCard title="Výstavba domů" img="/images/house.png" desc="Váš vysněný dům postavený k dokonalosti, od základu po střechu." />
+        <ServiceCard title="Sádrokartony" img="/images/drywall.png" desc="Desky mají využití téměř u všech druhů staveb, kde je kladen důraz na kvalitu." />
+        <ServiceCard title="Obklady a dlažby" img="/images/tiles.png" desc="Zaměřujeme se na pokládku obkladů a dlažeb z různých materiálů." />
+        <ServiceCard title="Malby a nátěry" img="/images/painting.png" desc="Specializujeme se na malířské a lakýrnické práce, včetně nátěrů fasád a střech." />
+        <ServiceCard title="Rekonstrukce" img="/images/reconstruction.png" desc="Specializujeme se na kompletní rekonstrukce bytů, rodinných domů a firem." />
+        <ServiceCard title="Vodoinstalatérské a topenářské práce" img="/images/plumbing.png" desc="Zajišťujeme kompletní vodoinstalatérské a topenářské práce." />
       </div>
     </div>
   );
@@ -250,11 +273,11 @@ function ProjectsPage() {
     <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-24 animate-fade-in">
       <h1 className="text-5xl font-bold text-[#A97C50] mb-8">Projekty</h1>
       <p className="text-xl mb-12 text-gray-600">Prohlédněte si naše úspěšné realizace.</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <ProjectCard img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/11062b_b743373ab2514f928a46d12c704d9170_mv2.jpg" />
-        <ProjectCard img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/c837a6_7f8bb28a0d1646bfbcc18d8f11e046aa_mv2.jpg" />
-        <ProjectCard img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/11062b_f6bec34858fa456ab712aa4018880375_mv2.jpg" />
-        <ProjectCard img="https://subtle-lamprey.10web.cloud/wp-content/uploads/2026/07/11062b_24095eb285b9463d89099b1c33fe57ea_mv2.jpg" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <ProjectCard img="/images/project1.png" />
+        <ProjectCard img="/images/project2.png" />
+        <ProjectCard img="/images/project3.png" />
+        <ProjectCard img="/images/project4.png" />
       </div>
     </div>
   );
@@ -266,21 +289,21 @@ function ContactsPage() {
       <h1 className="text-5xl font-bold text-[#A97C50] mb-8">Kontakt</h1>
       <div className="flex flex-col md:flex-row gap-16">
         <div className="md:w-1/2">
-           <h2 className="text-3xl font-bold mb-6 text-[#242121]">GRUJIČ CONSTRUCTION s.r.o.</h2>
-           <p className="text-lg text-gray-700 mb-2">Körnerova 455/7, Zábrdovice (Brno-střed)</p>
-           <p className="text-lg text-gray-700 mb-6">602 00 Brno</p>
-           
-           <h3 className="text-xl font-semibold mt-8 mb-4">Fakturační údaje:</h3>
-           <p className="text-gray-700">Jednatel: SAŠA GRUJIĆ</p>
-           <p className="text-gray-700">IČO: 10840648</p>
-           <p className="text-gray-700">DIČ: CZ10840648</p>
+          <h2 className="text-3xl font-bold mb-6 text-[#242121]">GRUJIČ CONSTRUCTION s.r.o.</h2>
+          <p className="text-lg text-gray-700 mb-2">Körnerova 455/7, Zábrdovice (Brno-střed)</p>
+          <p className="text-lg text-gray-700 mb-6">602 00 Brno</p>
+
+          <h3 className="text-xl font-semibold mt-8 mb-4">Fakturační údaje:</h3>
+          <p className="text-gray-700">Jednatel: SAŠA GRUJIĆ</p>
+          <p className="text-gray-700">IČO: 10840648</p>
+          <p className="text-gray-700">DIČ: CZ10840648</p>
         </div>
         <div className="md:w-1/2">
-           <h3 className="text-xl font-semibold mb-4">Zavolejte nám</h3>
-           <p className="text-2xl text-[#BC9706] font-bold mb-8">+420 608 411 169</p>
-           
-           <h3 className="text-xl font-semibold mb-4">Napište nám</h3>
-           <p className="text-2xl text-[#BC9706] font-bold">grujic@mail.cz</p>
+          <h3 className="text-xl font-semibold mb-4">Zavolejte nám</h3>
+          <p className="text-2xl text-[#BC9706] font-bold mb-8">+420 608 411 169</p>
+
+          <h3 className="text-xl font-semibold mb-4">Napište nám</h3>
+          <p className="text-2xl text-[#BC9706] font-bold">grujic@mail.cz</p>
         </div>
       </div>
     </div>
